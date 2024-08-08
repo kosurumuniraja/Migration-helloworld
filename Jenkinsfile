@@ -10,7 +10,7 @@ pipeline {
         NEXUS_URL = "172.31.44.98:8081"
         NEXUS_REPOSITORY = "release"
         NEXUS_CREDENTIAL_ID = "nexus-cred"
-        NEXUS_RELEASE = "2.0.0"
+        NEXUS_RELEASE = "3.0.0"
     }
 
     tools {
