@@ -85,8 +85,9 @@ pipeline {
       stage ('Publish Docker Image'){
         steps {
            withDockerRegistry(registry:[ credentialsId: 'Docker-cred']) {
-         sh 'docker push kosurumuniraja/java8:v2'
+         sh 'docker push kosurumuniraja/java8:${BUILD_NUMBER}'
         }
       }
     }
+}
 }
